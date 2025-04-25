@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы | OLLTIL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header style="background-color: #8c6161; width: 100%;">
+        <div class="container" >
+            <nav>
+                <img src="/images/логотип.png" style="width: 50px; float: left;" >
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li  class="active"><a href="about.html">О нас</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header" style="height: 500px; background:url(/images/шапка.png) ;">
+        <div class="container">
+            <h2>Отзывы наших гостей</h2>
+            <p>Что говорят о нас наши клиенты</p>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <div class="review-form">
+                <h3>Оставьте свой отзыв</h3>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Оценка:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="5">Отлично</option>
+                            <option value="4">Хорошо</option>
+                            <option value="3">Удовлетворительно</option>
+                            <option value="2">Плохо</option>
+                            <option value="1">Ужасно</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="review">Ваш отзыв:</label>
+                        <textarea id="review" name="review" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить отзыв</button>
+                </form>
+            </div>
+
+            <div class="reviews-list">
+                <div class="review">
+                    <div class="review-header">
+                        <div class="review-author">Анна Петрова</div>
+                        <div class="review-date">15.10.2023</div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>Останавливались с мужем на выходные в этом отеле. Впечатления только положительные! Номер был чистый, уютный, с прекрасным видом на город. Персонал очень вежливый и внимательный. Особенно понравился завтрак - огромный выбор блюд на любой вкус. Обязательно вернемся снова!</p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="review-header">
+                        <div class="review-author">Иван Сидоров</div>
+                        <div class="review-date">08.10.2023</div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>Был в командировке, останавливался в бизнес-номере. Все понравилось: расположение, сервис, чистота. Единственное - Wi-Fi иногда подтормаживал, но в целом для работы хватало. Персонал очень отзывчивый, помогли с организацией встречи в конференц-зале.</p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="review-header">
+                        <div class="review-author">Елена Козлова</div>
+                        <div class="review-date">01.10.2023</div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>Отмечали годовщину свадьбы в этом отеле. Забронировали номер с джакузи - это было просто сказочно! Нам оставили шампанское и фрукты в подарок, что было очень приятно. Ужинали в ресторане отеля - кухня на высшем уровне. СПА тоже понравился, массаж просто волшебный. Однозначно рекомендую этот отель для романтического отдыха!</p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="review-header">
+                        <div class="review-author">Дмитрий Волков</div>
+                        <div class="review-date">25.09.2023</div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>Хороший отель в центре Москвы. Удобное расположение - все достопримечательности в шаговой доступности. Номер комфортный, чистота на уровне. Из минусов - дорогая парковка, но это проблема всего центра. Завтраки отличные, персонал вежливый.</p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="review-header">
+                        <div class="review-author">Ольга Смирнова</div>
+                        <div class="review-date">18.09.2023</div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>Приезжали с детьми, остались очень довольны! Для ребенка предоставили дополнительную кровать и стульчик для кормления в ресторане. В номере было все необходимое. Персонал очень внимательный, помогли с организацией экскурсий. Бассейн чистый, дети были в восторге. Обязательно приедем еще!</p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="review-header">
+                        <div class="review-author">Александр Новиков</div>
+                        <div class="review-date">10.09.2023</div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>Отель хороший, но есть к чему стремиться. Номер был чистый, но немного шумно из-за ремонта в соседнем номере. Завтрак неплохой, но мог бы быть и лучше за такие деньги. Персонал вежливый, быстро решили вопрос с подключением к интернету.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-column">
+                <h3>OLTILL Отель</h3>
+                <p>Москва, Газетный переулок, 17</p>
+                <p>+7 (495) 123-45-67</p>
+                <p>info@grandhotel.ru</p>
+            </div>
+            <div class="footer-column">
+                <h3>Меню</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="discounts.html">Скидки</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Гранд Отель Москва. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
